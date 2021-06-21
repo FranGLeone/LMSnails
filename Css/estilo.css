@@ -1,0 +1,142 @@
+body {
+  background-color: #e5bdc7;
+  overflow-x: hidden; }
+
+.container-fluid {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.indexSection {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 672px;
+  background-image: url(../Assets/Images/Fondo-index.jpg);
+  background-size: 2000px 700px; }
+
+header {
+  position: sticky;
+  top: 0px;
+  border-bottom: solid 2px black; }
+
+.ubicacion__mapa {
+  width: 780px;
+  height: 500px;
+  margin: 10px;
+  padding: 10px; }
+
+.slider {
+  width: 682px;
+  height: 512px;
+  margin-bottom: 30px; }
+
+.slider__img {
+  width: 682px;
+  height: 512px; }
+
+.logoLms {
+  width: 250px;
+  height: 220px; }
+
+.tabla {
+  border: black; }
+
+.tabla__titulos {
+  font-weight: bold; }
+
+.tabla__servicios {
+  text-decoration-line: underline; }
+
+.ubicacion__info {
+  font-family: Georgia;
+  font-size: 20px;
+  line-height: 40px;
+  font-weight: bold;
+  border: 1px solid black;
+  padding: 10px; }
+
+.ubicacion__info__texto {
+  font-weight: normal;
+  font-size: 15px; }
+
+.ubicacion__info--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.formulario {
+  margin-top: 60px;
+  margin-bottom: 40px;
+  text-align: left;
+  line-height: 35px;
+  font-size: 25px;
+  margin-left: 20px;
+  font-family: Georgia; }
+
+.tituloPagina, .tituloPagina__subtitulo {
+  text-align: center;
+  font-family: "Clicker Script", cursive;
+  font-weight: bold;
+  font-size: 80px;
+  margin-top: 15px; }
+
+.tituloPagina__subtitulo {
+  text-decoration-line: underline;
+  font-size: 60px; }
+
+.textoBienvenida {
+  font-size: 100px;
+  font-family: "Clicker Script", cursive;
+  padding-right: 150px;
+  font-weight: bold; }
+
+footer {
+  background-color: #343c44;
+  align-content: flex-end;
+  border-top: solid 2px black; }
+
+.footer__h5 {
+  color: #DF98CD;
+  font-family: "Helvetica Neue";
+  font-size: small;
+  font-style: oblique;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 0px; }
+
+.footer__redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 80px; }
+
+.footer__iconos {
+  padding-left: 5px;
+  padding-right: 5px;
+  transition: all 0.5s;
+  margin: 5px; }
+
+.footer__iconos:hover {
+  transform: translateY(-20px); }
+
+.boton {
+  width: 10%;
+  color: grey;
+  font-size: 10px;
+  font-weight: bold; }
+
+.slider__cartel {
+  font-family: "Clicker Script", cursive; }
+
+.slider__cartel2 {
+  font-family: Georgia;
+  font-size: 18px;
+  font-weight: bold;
+  color: black; }
+
+.parrafo__servicios {
+  font-family: georgia;
+  font-weight: bold;
+  padding: 10px; }

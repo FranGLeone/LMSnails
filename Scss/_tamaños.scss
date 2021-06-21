@@ -1,0 +1,22 @@
+@mixin sizes($widht, $height){
+    width: $widht;
+    height: $height;
+}
+
+.ubicacion__mapa{
+    @include sizes(780px, 500px);
+    margin: 10px;
+    padding: 10px;
+}
+
+.slider{
+    @include sizes(682px,512px);
+    margin-bottom: 30px;
+}
+.slider__img{
+    @include sizes(682px,512px);
+}
+
+.logoLms{
+    @include sizes(250px,220px);
+}

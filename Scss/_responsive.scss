@@ -1,0 +1,35 @@
+@mixin marginsvertical($margin-top, $margin-bottom){
+    margin-top: $margin-top;
+    margin-bottom: $margin-bottom;
+}
+
+@mixin paddingshorizontal($padding-left, $padding-right){
+    padding-left: $padding-left;
+    padding-right: $padding-right;
+}
+
+
+$alineaciones:(
+    center:center,
+    left:left,
+    right:right
+);
+
+.container-fluid{
+    @include paddingshorizontal(0px,0px)
+}
+
+.indexSection{
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    height: 672px;
+    background-image: url(../Assets/Images/Fondo-index.jpg);
+    background-size: 2000px 700px;
+    
+}
+header{
+    position: sticky;
+    top: 0px;
+    border-bottom: solid 2px rgb(0, 0, 0);
+}

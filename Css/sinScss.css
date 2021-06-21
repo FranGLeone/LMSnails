@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+}
+
+/*lo unico que pude hacer usando sass es el body y la parte de la tabla, ya que lo demas me saltaban errores*/
+body {
+    background-color: #e5bdc7; 
+    overflow-x: hidden;
+
+}
+  
+.tabla {
+    border: black; }
+    .tabla__titulos {
+        font-weight: bold; }
+        .tabla__servicios {
+            text-decoration-line: underline; }
+            
+.precio{
+    text-align: center;
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.indexSection{
+    display: flex;
+    justify-content:flex-end;
+    align-items:center;
+    height: 694px;
+    
+}
+
+/*.logoArea{
+    position: sticky;
+    top: 0px;
+    padding: 10px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}*/
+
+/*.logoLms{
+    height: 220px;
+    width:250px;
+ }*/
+
+
+/*body header nav ul li{
+    list-style-type:none; 
+}*/
+
+header{
+    position: sticky;
+    top: 0px;
+    background-image: linear-gradient(to top, rgb(75, 70, 70),rgb(54, 50, 50), black);
+    border-bottom: solid 2px rgb(0, 0, 0);
+    height: 120px;
+}
+
+
+footer{
+    align-content: flex-end;
+    background-color: #343c44;
+}
+.footer__h5{
+    color:#DF98CD; 
+    font-family:"Helvetica Neue";
+    font-size: small; 
+    font-style: oblique;
+    display: flex;
+    justify-content: center;;
+    margin-top: 20px;
+}
+.footer__redes{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-end;
+    align-items: flex-end;
+    height: 80px;
+}
+.footer__iconos{
+    padding-left: 5px;
+    padding-right: 5px;
+    transition: all 0.5s;
+    margin: 5px;
+}
+
+.footer__iconos:hover{
+    transform: translateY(-20px);
+}
+
+.textoBienvenida{
+    font-size: 100px ;
+    font-family: 'Clicker Script', cursive;
+    padding-right: 300px;
+    font-weight: bold;
+}
+
+.tituloPagina{
+    text-align: center;
+    font-family: 'Clicker Script', cursive;
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 15px;
+}
+
+.tituloPagina__subtitulo{
+    text-align: center;
+    font-family: 'Clicker Script', cursive;
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 15px;
+    text-decoration-line: underline;
+}
+
+
+.formulario{
+    line-height: 35px;
+    text-align: left;
+    font-size: 25px;
+    margin-bottom: 60px;
+    margin-top: 60px;
+    margin-left: 20px;
+    font-family: Georgia;
+}

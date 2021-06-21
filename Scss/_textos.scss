@@ -1,0 +1,121 @@
+@import "responsive";
+@import "tamaños";
+$negro: black;
+$subrayado:underline;
+$negrita:bold;
+$fuentecursiva:'Clicker Script', cursive;
+$gris: grey;
+
+
+
+.tabla{
+    border: $negro;}
+    .tabla__titulos{
+        font-weight: $negrita;}
+        .tabla__servicios{
+            text-decoration-line: $subrayado;   
+}
+
+
+.ubicacion__info{
+    font-family:Georgia;
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: $negrita;
+    border: 1px solid black;
+    padding:10px;
+}
+
+.ubicacion__info__texto{
+    font-weight: normal;
+    font-size: 15px;
+}
+
+.ubicacion__info--flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario{
+@include marginsvertical(60px, 40px);
+text-align: map-get($alineaciones,left);
+line-height: 35px;
+font-size: 25px;
+margin-left: 20px;
+font-family: Georgia;
+}
+
+.tituloPagina{
+    text-align: map-get($alineaciones, center );
+    font-family: $fuentecursiva;
+    font-weight: $negrita;
+    font-size: 80px;
+    margin-top: 15px;
+}
+
+.tituloPagina__subtitulo{
+    @extend .tituloPagina;
+    text-decoration-line: $subrayado;
+    font-size: 60px;
+    
+}
+
+.textoBienvenida{
+    font-size: 100px ;
+    font-family: $fuentecursiva;
+    padding-right: 150px;
+    font-weight: $negrita;
+
+}
+
+footer{
+    background-color: #343c44;
+    align-content: flex-end;
+    border-top: solid 2px black}
+    .footer__h5{
+        color:#DF98CD; 
+        font-family:"Helvetica Neue";
+        font-size: small; 
+        font-style: oblique;
+        display: flex;
+        justify-content: center;
+        @include marginsvertical(20px, 0px)}
+    .footer__redes{
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-end;
+        align-items: flex-end;
+        height: 80px;}
+        .footer__iconos{
+            @include paddingshorizontal(5px,5px);
+            transition: all 0.5s;
+            margin: 5px;}
+        .footer__iconos:hover{
+            transform: translateY(-20px);
+}
+
+.boton{
+    width: 10%;
+    color: $gris;
+    font-size: 10px;
+    font-weight:$negrita
+}
+
+.slider__cartel{
+    font-family: $fuentecursiva;
+}
+
+.slider__cartel2{
+    font-family: Georgia;
+    font-size: 18px;
+    font-weight: $negrita;
+    color: black;
+}
+
+.parrafo__servicios{
+    font-family: georgia;
+    font-weight: $negrita;
+    padding: 10px;
+
+}
