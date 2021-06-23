@@ -20,16 +20,28 @@ $alineaciones:(
 }
 
 .indexSection{
-    display: flex;
-    justify-content:flex-end;
+    /*display: flex;
+    justify-content:flex-end;*/
     align-items:center;
     height: 672px;
-    background-image: url(../Assets/Images/Fondo-index.jpg);
-    background-size: 2000px 700px;
+    /*background-image: url(../Assets/Images/Fondo-index.jpg);
+    background-size: 2000px 700px;*/
     
 }
 header{
     position: sticky;
     top: 0px;
     border-bottom: solid 2px rgb(0, 0, 0);
+    z-index: 3;
+}
+
+.botonIndex{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

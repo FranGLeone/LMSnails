@@ -37,13 +37,19 @@ $gris: grey;
     align-items: center;
 }
 
-.formulario{
+/*.formulario{
 @include marginsvertical(60px, 40px);
 text-align: map-get($alineaciones,left);
 line-height: 35px;
 font-size: 25px;
 margin-left: 20px;
 font-family: Georgia;
+border: 5px inset #343c44;
+}*/
+
+.boton__formulario{
+    margin-bottom: 37px;
+    padding:5px
 }
 
 .tituloPagina{
@@ -64,8 +70,9 @@ font-family: Georgia;
 .textoBienvenida{
     font-size: 100px ;
     font-family: $fuentecursiva;
-    padding-right: 150px;
+    /*padding-right: 250px;*/
     font-weight: $negrita;
+    padding-top: 150px;
 
 }
 
@@ -119,3 +126,22 @@ footer{
     padding: 10px;
 
 }
+
+.nosotros__index__titulo{
+    font-family: $fuentecursiva;
+    font-size: 80px;
+    font-weight: bold;
+    margin-top: 200px;
+    text-align: center;
+    
+}
+
+.nosotros__index--parrafo{
+    font-family: Georgia;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: left;
+
+}
+

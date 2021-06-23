@@ -38,6 +38,9 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item">
+                                    <a class="nav-link" href="../index.html">Inicio</a>
+                                </li>
+                                <li class="nav-item">
                                     <a class="nav-link" href="servicios.html">Servicios</a>
                                 </li>
                                 <li class="nav-item">
@@ -67,33 +70,69 @@
     <section class="container-fluid">
         <div class="row">
             <div class="col-lg-6 col-xs-12">
-                <form action="#" class= "formulario">
-                    <label for="Nombre"></label>Nombre: 
-                        <input type="text">
-                    </label><br>
-                    <label for="Apellido">Apellido:
-                        <input type="text">
-                    </label><br>
-                    <label for="Email">Email:
-                        <input type="email" placeholder="Usuario@ejemplo.com">
-                    </label><br>
-                    <label for="Edad">Edad:
-                        <input type="number" style="width: 42px; height: 20px;"> <br>
-                    </label>
-                    <div>Género
-                    <select name="Género" id="Género"> Género:
-                        <option value="Hombre">Hombre</option>
-                        <option value="Mujer">Mujer</option>
-                        <option value="No define">No define</option>
-                    </select> </div><br>
-                        <textarea name="Mensaje" id="Mensaje" cols="20" rows="3" placeholder="Escriba aquí su mensaje:"></textarea>
-                    <br>
-                    <div>
-                    <input type="checkbox" name="acepta" value="1">Quiero recibir promociones y descuentos por mail</div> <br>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpiar">
+                <section class="Material-contact-section section-padding section-dark">
+                    <div class="container">
+                        <div class="row">
+                            <!-- Section Titile -->
+                            <div class="col-lg-12" data-aos="flip-down" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                                <h1 class="section-title">Contáctate con nosotros</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <!-- Section Titile -->
+                            <div class="col-md-6 mt-3">
+                              <p>Por cualquier duda respecto a nuestros servicios, horarios de atención o ubicación, dejanos tu consulta junto con tu nombre y tu email y te responderemos a la brevedad.</p>
+              
+                              <div class="find-widget">
+                               Dirección: <a href="https://www.google.com/maps/place/Plaza+Aristobulo+del+Vall/@-34.6053457,-58.4924076,19.75z/data=!4m5!3m4!1s0x95bcb7f3684c7c7d:0x6a59300f8d3b959c!8m2!3d-34.6054557!4d-58.4923556">Cuenca 2680</a>
+                              </div>
+                              <div class="find-widget">
+                                Teléfono:  <a href="https://web.whatsapp.com/">+ 54 0 1132562352</a>
+                              </div>
+                              
+                              <div class="find-widget">
+                                 Horario: <a href="#">Lun a Vie: 09:30 AM - 19.30 PM</a>
+                              </div>
+                            </div>
+                            <!-- contact form -->
+                            <div class="col-lg-6">
+                                <form class="shake" role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                                    <!-- Name -->
+                                    <div class="form-group label-floating">
+                                      <label class="control-label" for="name">Nombre y apellido</label>
+                                      <input class="form-control" id="name" type="text" name="name" required data-error="Por favor, ingrese su nombre y apellido">
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                    <!-- email -->
+                                    <div class="form-group label-floating">
+                                      <label class="control-label" for="email">Email</label>
+                                      <input class="form-control" id="email" type="email" name="email" required data-error="Por favor, ingrese su email">
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                    <!-- Subject -->
+                                    <div class="form-group label-floating">
+                                      <label class="control-label">Asunto</label>
+                                      <input class="form-control" id="msg_subject" type="text" name="subject" required data-error="Por favor, ingrese el asunto">
+                                      <div class="help-block with-errors"></div>
+                                    </div>
+                                    <!-- Message -->
+                                    <div class="form-group label-floating">
+                                        <label for="message" class="control-label">Mensaje</label>
+                                        <textarea class="form-control" rows="3" id="message" name="message" required data-error="Escriba su mensaje"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                    <!-- Form Submit -->
+                                    <div class="form-submit mt-5">
+                                        <input type="submit" value="Enviar" class="boton__formulario">
+                                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
                     </div>
-                </form>
+                  </section>
+                   
             </div>
         </div>
     </section>

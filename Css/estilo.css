@@ -2,26 +2,40 @@ body {
   background-color: #e5bdc7;
   overflow-x: hidden; }
 
+.card-body {
+  background-image: linear-gradient(to top, #e5bdc7, #dfa0b0, #e5bdc7);
+  border: 1px solid pink; }
+
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px; }
 
 .indexSection {
-  display: flex;
-  justify-content: flex-end;
+  /*display: flex;
+    justify-content:flex-end;*/
   align-items: center;
   height: 672px;
-  background-image: url(../Assets/Images/Fondo-index.jpg);
-  background-size: 2000px 700px; }
+  /*background-image: url(../Assets/Images/Fondo-index.jpg);
+    background-size: 2000px 700px;*/ }
 
 header {
   position: sticky;
   top: 0px;
-  border-bottom: solid 2px black; }
+  border-bottom: solid 2px black;
+  z-index: 3; }
+
+.botonIndex {
+  display: flex;
+  justify-content: flex-start; }
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 .ubicacion__mapa {
   width: 780px;
-  height: 550px;
+  height: 540px;
   margin: 10px;
   padding: 10px; }
 
@@ -64,14 +78,18 @@ header {
   justify-content: center;
   align-items: center; }
 
-.formulario {
-  margin-top: 60px;
-  margin-bottom: 40px;
-  text-align: left;
-  line-height: 35px;
-  font-size: 25px;
-  margin-left: 20px;
-  font-family: Georgia; }
+/*.formulario{
+@include marginsvertical(60px, 40px);
+text-align: map-get($alineaciones,left);
+line-height: 35px;
+font-size: 25px;
+margin-left: 20px;
+font-family: Georgia;
+border: 5px inset #343c44;
+}*/
+.boton__formulario {
+  margin-bottom: 37px;
+  padding: 5px; }
 
 .tituloPagina, .tituloPagina__subtitulo {
   text-align: center;
@@ -87,8 +105,9 @@ header {
 .textoBienvenida {
   font-size: 100px;
   font-family: "Clicker Script", cursive;
-  padding-right: 150px;
-  font-weight: bold; }
+  /*padding-right: 250px;*/
+  font-weight: bold;
+  padding-top: 150px; }
 
 footer {
   background-color: #343c44;
@@ -140,3 +159,17 @@ footer {
   font-family: georgia;
   font-weight: bold;
   padding: 10px; }
+
+.nosotros__index__titulo {
+  font-family: "Clicker Script", cursive;
+  font-size: 80px;
+  font-weight: bold;
+  margin-top: 200px;
+  text-align: center; }
+
+.nosotros__index--parrafo {
+  font-family: Georgia;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left; }
