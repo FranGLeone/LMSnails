@@ -14,7 +14,7 @@ body {
   /*display: flex;
     justify-content:flex-end;*/
   align-items: center;
-  height: 672px;
+  /*height: 672px;*/
   /*background-image: url(../Assets/Images/Fondo-index.jpg);
     background-size: 2000px 700px;*/ }
 
@@ -52,6 +52,11 @@ header {
   width: 250px;
   height: 220px; }
 
+@media only screen and (max-width: 1024px) {
+  .ubicacion__mapa {
+    width: 400px;
+    height: 400px; } }
+
 .tabla {
   border: black; }
 
@@ -66,8 +71,9 @@ header {
   font-size: 20px;
   line-height: 40px;
   font-weight: bold;
-  border: 1px solid black;
-  padding: 10px; }
+  border: 2px solid black;
+  padding: 10px;
+  background-image: linear-gradient(to top, #e5bdc7, #dfa0b0, #e5bdc7); }
 
 .ubicacion__info__texto {
   font-weight: normal;
@@ -135,7 +141,8 @@ footer {
   padding-left: 5px;
   padding-right: 5px;
   transition: all 0.5s;
-  margin: 5px; }
+  margin: 5px;
+  color: #e5bdc7; }
 
 .footer__iconos:hover {
   transform: translateY(-20px); }
@@ -170,6 +177,23 @@ footer {
 .nosotros__index--parrafo {
   font-family: Georgia;
   font-weight: normal;
-  font-size: 20px;
+  font-size: 17px;
   line-height: 30px;
-  text-align: left; }
+  text-align: center; }
+
+.boton__index {
+  margin-top: 80px;
+  margin-bottom: 104px; }
+
+@media only screen and (max-width: 1024px) {
+  .nosotros__index__titulo {
+    font-size: 60px;
+    margin-top: 50px; }
+  .nosotros__index--parrafo {
+    font-size: 14px;
+    line-height: 25px;
+    text-align: left;
+    padding: 20px; }
+  .ubicacion__info__texto {
+    font-size: 12px;
+    line-height: 20px; } }

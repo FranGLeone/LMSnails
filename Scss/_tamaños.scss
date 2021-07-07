@@ -20,3 +20,9 @@
 .logoLms{
     @include sizes(250px,220px);
 }
+
+@media only screen and (max-width: 1024px){
+    .ubicacion__mapa{
+        @include sizes(400px, 400px)
+    }
+}

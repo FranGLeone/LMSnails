@@ -19,6 +19,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap" rel="stylesheet">
     <!--mi aos-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--iconos-->
+    <script src="https://kit.fontawesome.com/c4dbba3b67.js" crossorigin="anonymous"></script>
     <!--mi css-->
     <link rel="stylesheet" href="Css/estilo.css">
 </head>
@@ -28,7 +30,7 @@
     <header>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xl-12 col-xs-12">
+                <div class="col-xl-12 col-md-12 col-xs-12">
                     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -67,21 +69,23 @@
     <!--comienzo de seccion index-->
     <section class="containter-fluid indexSection">
         <div class="row">
+            <div class="col-lg-6 col-xs-12 flex"> <!--titulo principal de la pagina-->
+                <h1 class="textoBienvenida" data-aos="fade-right" data-aos-offset="500" data-aos-duration="1500"
+                    data-aos-easing="ease-in-sine">LMS <br> Nails</h1>
+            </div>
             <div class="col-lg-6 col-xs-12 flex"> <!--sobre nosotros-->
-                <h6 class="nosotros__index__titulo" data-aos="fade-right" data-aos-offset="500"
+                <h6 class="nosotros__index__titulo" data-aos="fade-left" data-aos-offset="500"
                     data-aos-duration="2000">Sobre nosotros<br>
                     <p class="nosotros__index--parrafo">Somos un emprendimiento familiar surgido en 2019 con el fin de
                         realzar <br>
                         la belleza natural, mediante diferentes tipos de servicios de uñas y pestañas. <br>
                         Atendemos en nuestra casa amueblada y equipada exclusivamente para el trabajo, <br>
-                        con herramientas y productos de primera calidad. Ubicadas en el barrio de <br>
-                        Villa del Parque, disponemos de flexibles horarios a coordinar, de Lunes a Viernes.
+                        con herramientas y productos de primera calidad.
                     </p>
                 </h6>
             </div>
-            <div class="col-lg-6 col-xs-12 flex"> <!--titulo principal de la pagina-->
-                <h1 class="textoBienvenida" data-aos="fade-left" data-aos-offset="500" data-aos-duration="1500"
-                    data-aos-easing="ease-in-sine">LMS <br> Nails</h1>
+            <div class="col-lg-12 col-xs-12 flex">
+                <button type="button" class="btn btn-outline-dark btn-lg boton__index"><a href="pages/contacto.html" style="color: black;">¡Reserva tu turno!</a> </button>
             </div>
         </div>
     </section>
@@ -93,16 +97,11 @@
             <div class="col-lg-12 col-xs-12 footer">
                 <h5 class="footer__h5">LMS Nails 2021</h5> <!--titulo del footer-->
                 <div class="footer__redes"> <!--redes sociales-->
-                    <a
-                        href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDXXnRszbcPJdLpCDDKvdbRGbzbgvlcJKlxFssMFrpCdfdrlGsDKnJMhDZljTHqbkvkRqzg">
-                        <img src="Assets/Images/Mail.png" alt="Mail" width="62.6px" height="50px"
-                            class="footer__iconos"></a>
-                    <a href="https://web.whatsapp.com">
-                        <img src="Assets/Images/WP.png" alt="Whatsapp" width="50px" height="50px"
-                            class="footer__iconos"></a>
-                    <a href="https://www.instagram.com/nailss_bylila/">
-                        <img src="Assets/Images/IG.png" alt="Instagram'" width="50px" height="50x"
-                            class="footer__iconos"></a>
+                    <a class="far fa-envelope fa-3x footer__iconos" href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcSDXXnRszbcPJdLpCDDKvdbRGbzbgvlcJKlxFssMFrpCdfdrlGsDKnJMhDZljTHqbkvkRqzg"></a>
+                    
+                    <a class="fab fa-whatsapp fa-3x footer__iconos" href="https://web.whatsapp.com"></a>
+                    
+                    <a class="fab fa-instagram fa-3x footer__iconos" href="https://www.instagram.com/nailss_bylila/"></a>
                 </div>
             </div>
         </div>
@@ -122,3 +121,4 @@
         AOS.init();
     </script>
 </body>
+
