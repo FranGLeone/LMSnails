@@ -6,6 +6,9 @@ body {
   background-image: linear-gradient(to top, #e5bdc7, #dfa0b0, #e5bdc7);
   border: 1px solid pink; }
 
+.card__servicios {
+  background-image: linear-gradient(to top, #e5bdc7, #dfa0b0, #e5bdc7); }
+
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px; }
@@ -57,6 +60,9 @@ header {
     width: 400px;
     height: 400px; } }
 
+.card-title {
+  font-size: 18px; }
+
 .tabla {
   border: black; }
 
@@ -94,7 +100,7 @@ font-family: Georgia;
 border: 5px inset #343c44;
 }*/
 .boton__formulario {
-  margin-bottom: 37px;
+  margin-bottom: 27px;
   padding: 5px; }
 
 .tituloPagina, .tituloPagina__subtitulo {
@@ -147,7 +153,7 @@ footer {
 .footer__iconos:hover {
   transform: translateY(-20px); }
 
-.boton {
+.slider__boton {
   width: 10%;
   color: grey;
   font-size: 10px;
@@ -197,3 +203,12 @@ footer {
   .ubicacion__info__texto {
     font-size: 12px;
     line-height: 20px; } }
+
+ul li {
+  list-style: none; }
+
+.precio__servicio {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-top: 10px;
+  padding-bottom: 10px; }

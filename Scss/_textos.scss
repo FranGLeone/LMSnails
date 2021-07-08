@@ -51,7 +51,7 @@ border: 5px inset #343c44;
 }*/
 
 .boton__formulario{
-    margin-bottom: 37px;
+    margin-bottom: 27px;
     padding:5px
 }
 
@@ -106,7 +106,7 @@ footer{
             transform: translateY(-20px);
 }
 
-.boton{
+.slider__boton{
     width: 10%;
     color: $gris;
     font-size: 10px;
@@ -172,5 +172,14 @@ footer{
 
 }
 
+ul li{
+    list-style: none;
+}
 
+.precio__servicio{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
