@@ -49,9 +49,3 @@ header{
 .card__efecto:hover{
     transform: scale(1.15,1.15);
 }
-
-@media only screen and (max-width: 1024px){
-    .card{
-        display: flex;
-    }
-}
