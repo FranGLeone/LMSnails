@@ -1,5 +1,5 @@
-@mixin sizes($widht, $height){
-    width: $widht;
+@mixin sizes($width, $height){
+    width: $width;
     height: $height;
 }
 
@@ -10,11 +10,23 @@
 }
 
 .slider{
-    @include sizes(682px,512px);
-    margin-bottom: 30px;
+    @include sizes(768px,469px);
+    margin-bottom: 60px;
+    
+    
 }
+
+@media only screen and (max-width: 1024px){
+    .slider{
+        @include sizes(398px, px);
+        }
+    
+}
+        
+
 .slider__img{
     @include sizes(682px,512px);
+    
 }
 
 .logoLms{
