@@ -39,10 +39,6 @@ header {
 .card__efecto:hover {
   transform: scale(1.15, 1.15); }
 
-@media only screen and (max-width: 1024px) {
-  .card {
-    display: flex; } }
-
 .ubicacion__mapa {
   width: 780px;
   height: 540px;
@@ -92,6 +88,9 @@ header {
   border: 2px solid black;
   padding: 10px;
   background-image: linear-gradient(to top, #e5bdc7, #dfa0b0, #e5bdc7); }
+
+.ubicacion__info:hover {
+  transform: scale(1.15, 1.15); }
 
 .ubicacion__info__texto {
   font-weight: normal;

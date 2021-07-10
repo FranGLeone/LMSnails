@@ -27,6 +27,10 @@ $gris: grey;
     background-image: linear-gradient(to top, #e5bdc7, #dfa0b0, #e5bdc7)
 }
 
+.ubicacion__info:hover{
+    transform: scale(1.15,1.15);
+}
+
 .ubicacion__info__texto{
     font-weight: normal;
     font-size: 15px;
