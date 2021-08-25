@@ -9,6 +9,9 @@ body {
 .card__servicios {
   background-image: linear-gradient(to top, #e5bdc7, #dfa0b0, #e5bdc7); }
 
+.loginIndex {
+  color: white; }
+
 .container-fluid {
   padding-left: 0px;
   padding-right: 0px; }
@@ -25,7 +28,8 @@ header {
   position: sticky;
   top: 0px;
   border-bottom: solid 2px black;
-  z-index: 3; }
+  z-index: 3;
+  background-color: #343c44; }
 
 .botonIndex {
   display: flex;
@@ -38,6 +42,21 @@ header {
 
 .card__efecto:hover {
   transform: scale(1.15, 1.15); }
+
+#sectionTienda {
+  padding: 30px 0px 30px 10px; }
+
+#carrito {
+  padding: 40px;
+  border-radius: 10px;
+  background-image: linear-gradient(to top, #e6aab9, #e2bac4, #e6aab9);
+  width: 100%;
+  max-width: 500px;
+  margin: 48px auto; }
+
+.carritoProd {
+  font-family: georgia;
+  font-size: 25px; }
 
 .ubicacion__mapa {
   width: 780px;
@@ -223,3 +242,19 @@ ul li {
   border-bottom: 1px solid black;
   padding-top: 10px;
   padding-bottom: 10px; }
+
+.nombreEsmalte {
+  font-family: "Clicker Script", cursive;
+  font-weight: bold;
+  font-size: 40px; }
+
+.tituloCarrito {
+  font-family: "Clicker Script", cursive;
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold; }
+
+.botonComprar {
+  background-image: linear-gradient(to top, #e5bdc7, #dfa0b0, #e5bdc7);
+  font-weight: bold;
+  font-family: Georgia; }

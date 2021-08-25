@@ -188,3 +188,26 @@ ul li{
     padding-bottom: 10px;
 }
 
+.nombreEsmalte{
+    font-family: $fuentecursiva;
+    font-weight: bold;
+    font-size: 40px;
+    
+}
+
+.tituloCarrito{
+    font-family: $fuentecursiva;
+    font-size: 40px;
+    text-align: center;
+    font-weight: $negrita;
+
+
+}
+
+.botonComprar{
+    background-image: linear-gradient(to top, #e5bdc7, #dfa0b0, #e5bdc7);
+    font-weight: $negrita;
+    font-family: Georgia;
+
+}
+

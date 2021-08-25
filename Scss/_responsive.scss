@@ -33,6 +33,7 @@ header{
     top: 0px;
     border-bottom: solid 2px rgb(0, 0, 0);
     z-index: 3;
+    background-color: #343c44;
 }
 
 .botonIndex{
@@ -48,4 +49,28 @@ header{
 
 .card__efecto:hover{
     transform: scale(1.15,1.15);
+}
+
+#sectionTienda{
+    padding: 30px 0px 30px 10px;
+
+}
+
+#carrito{
+    //display: flex;
+    //flex-direction: column;
+    //align-items: center;
+    padding: 40px;
+    border-radius: 10px;
+    background-image: linear-gradient(to top, #e6aab9, #e2bac4, #e6aab9);
+    width: 100%;
+    max-width: 500px;
+    margin: 48px auto;
+
+
+}
+
+.carritoProd{
+    font-family: georgia;
+    font-size: 25px;
 }

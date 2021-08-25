@@ -57,6 +57,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link" href="galeria.html">Galería</a>
                                 </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="tienda.html">Tienda</a>
+                                </li>
                             </ul>
                         </div>
                     </nav>
@@ -111,39 +114,39 @@
                             
     <!--comienzo de formulario-->
                             <div class="col-lg-6">
-                                <form class="shake" role="form" method="post" id="contactForm" name="contact-form"
+                                <form action="Js/contacto.js"  class="shake" role="form" method="post" id="contactForm" name="contact-form"
                                     data-toggle="validator">
                                     <!--nombre-->
                                     <div class="form-group label-floating">
                                         <label class="control-label" for="name">Nombre y apellido</label>
-                                        <input class="form-control" id="name" type="text" name="name" required
+                                        <input class="form-control" id="name nombres" type="text" name="name" required
                                             data-error="Por favor, ingrese su nombre y apellido">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <!--email-->
                                     <div class="form-group label-floating">
                                         <label class="control-label" for="email">Email</label>
-                                        <input class="form-control" id="email" type="email" name="email" required
+                                        <input class="form-control" id="email mail" type="email" name="email" required
                                             data-error="Por favor, ingrese su email">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <!--asunto-->
                                     <div class="form-group label-floating">
                                         <label class="control-label">Asunto</label>
-                                        <input class="form-control" id="msg_subject" type="text" name="subject" required
+                                        <input class="form-control" id="msg_subject asuntos" type="text" name="subject" required
                                             data-error="Por favor, ingrese el asunto">
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <!--mensaje-->
                                     <div class="form-group label-floating">
                                         <label for="message" class="control-label">Mensaje</label>
-                                        <textarea class="form-control" rows="3" id="message" name="message" required
+                                        <textarea class="form-control" rows="3" id="message mensajes" name="message" required
                                             data-error="Escriba su mensaje"></textarea>
                                         <div class="help-block with-errors"></div>
                                     </div>
                                     <!--enviar-->
                                     <div class="form-submit mt-5">
-                                        <input type="submit" value="Enviar" class="boton__formulario">
+                                        <input type="submit" value="Enviar" class="boton__formulario" >
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                                         <div class="clearfix"></div>
                                     </div>
@@ -187,6 +190,7 @@
     <script>
         AOS.init();
     </script>
+    <script src="js/contacto.js"></script>
 </body>
 
 </html>
