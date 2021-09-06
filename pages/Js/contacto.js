@@ -1,23 +1,45 @@
-const nombres = []
-const mails = []
-const asuntos = []
-const mensajes = []
 
 
-nombres.push(document.getElementById("nombres"));
-nombres.push(document.getElementById("mail"));
-nombres.push(document.getElementById("asuntos"));
-nombres.push(document.getElementById("mensajes"));
+//const botonEnviar = document.getElementsByClassName("boton__formulario");
 
-const botonEnviar = document.getElementsByClassName("boton__formulario");
 
-function funcionFormulario(){
-    
-    alert("El formulario ha sido enviado con exito")
-    
-}
 
-for(const boton of botonEnviar){
-    boton.addEventListener("click", funcionFormulario);
-}
+
+
+//for(const boton of botonEnviar){
+ //   boton.addEventListener("click", console.log("hola"));}
+
+
+//$(".boton__formulario").click((e) =>{
+  //  validarFormulario();
+//})  
+
+let nombre = 0
+
+$(document).ready(() => {
+    $(".error").hide();
+    $("#miForm").submit(function (e) {
+        e.preventDefault();
+        let nombre = $("#nombres").val();
+
+        if (nombre.length < 3) {
+            $(".error").show();
+            return;
+            
+
+
+
+
+        }
+        $(".error").hide();
+        $("#resultado").text(`Su nombre es: ${nombre}`)
+        e.default()
+
+    });
+})
+
+
+
+
+
 

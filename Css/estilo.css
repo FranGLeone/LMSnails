@@ -58,6 +58,14 @@ header {
   font-family: georgia;
   font-size: 25px; }
 
+.card__tienda {
+  margin: 20px 20px; }
+
+.bordeTienda {
+  border-right: 6px double black;
+  border-left: 6px double black;
+  border-bottom: 6px double black; }
+
 .ubicacion__mapa {
   width: 780px;
   height: 540px;

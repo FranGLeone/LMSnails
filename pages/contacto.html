@@ -114,43 +114,44 @@
                             
     <!--comienzo de formulario-->
                             <div class="col-lg-6">
-                                <form action="Js/contacto.js"  class="shake" role="form" method="post" id="contactForm" name="contact-form"
-                                    data-toggle="validator">
+                                <form action="#"id="miForm">
                                     <!--nombre-->
                                     <div class="form-group label-floating">
                                         <label class="control-label" for="name">Nombre y apellido</label>
-                                        <input class="form-control" id="name nombres" type="text" name="name" required
-                                            data-error="Por favor, ingrese su nombre y apellido">
-                                        <div class="help-block with-errors"></div>
+                                        <input  type="text" class="form-control" id="name nombres" name="name">
+                                        
                                     </div>
                                     <!--email-->
                                     <div class="form-group label-floating">
                                         <label class="control-label" for="email">Email</label>
-                                        <input class="form-control" id="email mail" type="email" name="email" required
-                                            data-error="Por favor, ingrese su email">
-                                        <div class="help-block with-errors"></div>
+                                        <input class="form-control" id="email mail" type="email" name="email">
+                                        
                                     </div>
                                     <!--asunto-->
                                     <div class="form-group label-floating">
                                         <label class="control-label">Asunto</label>
-                                        <input class="form-control" id="msg_subject asuntos" type="text" name="subject" required
-                                            data-error="Por favor, ingrese el asunto">
-                                        <div class="help-block with-errors"></div>
+                                        <input class="form-control" id="msg_subject asuntos" type="text" name="subject" >
+                                       
                                     </div>
                                     <!--mensaje-->
                                     <div class="form-group label-floating">
                                         <label for="message" class="control-label">Mensaje</label>
-                                        <textarea class="form-control" rows="3" id="message mensajes" name="message" required
-                                            data-error="Escriba su mensaje"></textarea>
-                                        <div class="help-block with-errors"></div>
+                                        <textarea class="form-control" rows="3" id="message mensajes" name="message"></textarea>
+                                        
                                     </div>
+                                    <span class="error">
+                                        Por favor, rellene todo el formulario.
+                                    </span>
                                     <!--enviar-->
-                                    <div class="form-submit mt-5">
+                                    <div class=" mt-5">
                                         <input type="submit" value="Enviar" class="boton__formulario" >
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
-                                        <div class="clearfix"></div>
                                     </div>
                                 </form>
+
+
+                                
+                                <p id="resultado"></p>
                             </div>
                         </div>
                     </div>
