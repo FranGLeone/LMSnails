@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form action="" id="miForm">
+        <input type="text" id="nombres">
+        <input type="email" name="" id="mails">
+        <span class="error">
+            Por favor, escriba un nombre válido.
+        </span>
+        <span class="error2">
+            Por favor, escriba un mail válido.
+        </span>
+        <input type="submit" value="enviar"></input>
+    </form>
+
+    <p id="pepe"></p>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+
+    <script>
+        const correos = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
+        
+        $(document).ready(() => {
+            $(".error").hide();
+            $("#miForm").submit(function (e) {
+                e.preventDefault();
+                let nombre = $("#nombres").val();
+
+                if (nombre.length < 3) {
+                    $(".error").fadeIn();
+                    return;
+                    
+                } 
+                $(".error").hide();
+                $("#pepe").text(`Su nombre es: ${nombre}`)
+                e.default()
+
+            });
+            
+           
+            //Agregemos <h3> con jQuery"
+$("body").prepend('<h3>¡Hola Coder1!</h3>');
+$("body").prepend('<h3>¡Hola Coder2!</h3>');
+//Ocultamos con fadeOut() todos los <h3>
+$("h3").fadeOut(); 
+            
+        })
+
+        
+        
+    </script>
+    <br>
+    <br>    
+    <br>
+    <br>
+<script>
+//Agregamos una estructura con jQuery
+$("body").prepend(`</div>
+                        <a>Ir a contacto</a>
+                        <p style="height: 800px"></p>
+                        <section id="seccionContacto">
+                           <h4>¡Somos Coders!</h4>
+                        </section>
+                   </div>`);
+// Asociamos la animación al click en un elemento <a>
+$('a').click( function(e) { 
+    e.preventDefault();
+    //Animamos sus propiedades CSS con animate
+    $('html, body').animate({
+        scrollTop: $("#seccionContacto").offset().top  
+    }, 2000);
+} );
+
+                    </script>
+
+<script>
+    //Agreguemos un párrafo con jQuery
+$("body").prepend('<p id="p1">Coder House</p>');
+//Declaración de métodos encadenados
+$("#p1").slideUp(2000).slideDown(2000);
+</script>
+
+<script>
+    //Agregamos un botón y un div con jQuery
+$("body").prepend('<button id="btn1">Mostrar</button>');
+$("body").prepend(`<div id="div1" style="height: 120px">
+                        <h3>¡Hola Coder!</h3>
+                        <h4>Sorpresa 2</h4>
+                    </div>`);
+//Usamos slideUp sobre div1 en respuesta al click del boton btn1
+$("#btn1").click(() => { 
+    $("#div1").slideUp("fast");
+});
+
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+</body>
+
+</html>

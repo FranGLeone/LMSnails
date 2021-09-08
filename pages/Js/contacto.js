@@ -14,29 +14,32 @@
   //  validarFormulario();
 //})  
 
-let nombre = 0
+
+
+let nombre = "";
 
 $(document).ready(() => {
+  $(".error").hide();
+  $("#miForm").submit(function (e) {
+    e.preventDefault();
+    let nombre = $("#name").val();
+
+    if (nombre.length < 3) {
+      $(".error").fadeIn(2000).delay(5000).fadeOut(2000)
+      return;
+     
+    }
     $(".error").hide();
-    $("#miForm").submit(function (e) {
-        e.preventDefault();
-        let nombre = $("#nombres").val();
-
-        if (nombre.length < 3) {
-            $(".error").show();
-            return;
-            
-
+    
+    alert("Formulario enviado con exito!")
+    this.submit()
+      
+    
+  });
+});
 
 
-
-        }
-        $(".error").hide();
-        $("#resultado").text(`Su nombre es: ${nombre}`)
-        e.default()
-
-    });
-})
+const correos = /^[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/
 
 
 

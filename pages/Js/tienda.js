@@ -77,3 +77,11 @@ $(".botonFin").click(function(){
     alert("Gracias por comprar nuestros productos!")
     location.reload()
 })
+
+$(".ofertaDiv").animate({
+    fontWeight: "bold",
+    fontSize: "20px",
+    opacity: 0.7,
+    width: 500,
+
+},2000).delay(6000).slideUp(1000)
