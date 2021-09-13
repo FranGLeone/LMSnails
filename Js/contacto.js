@@ -23,6 +23,7 @@ $(document).ready(() => {
   $("#miForm").submit(function (e) {
     e.preventDefault();
     let nombre = $("#name").val();
+    
 
     if (nombre.length < 3) {
       $(".error").fadeIn(2000).delay(5000).fadeOut(2000)
