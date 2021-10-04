@@ -20,12 +20,9 @@ $alineaciones:(
 }
 
 .indexSection{
-    /*display: flex;
-    justify-content:flex-end;*/
+
     align-items:center;
-    /*height: 672px;*/
-    /*background-image: url(../Assets/Images/Fondo-index.jpg);
-    background-size: 2000px 700px;*/
+
     
 }
 header{
@@ -48,20 +45,16 @@ header{
 }
 
 .card__efecto:hover{
-    transform: scale(1.15,1.15);
+    transform: scale(1.08,1.08);
 }
 
 #sectionTienda{
     padding: 30px 0px 30px 10px;
-    //display: flex;
-    //flex-wrap: wrap;
+ 
 
 }
 
 #carrito{
-    //display: flex;
-    //flex-direction: column;
-    //align-items: center;
     padding: 40px;
     border-radius: 10px;
     background-image: linear-gradient(to top, #e6aab9, #e2bac4, #e6aab9);
@@ -78,10 +71,6 @@ header{
 }
 
 .card__tienda{
-    //width: 22rem;
-    //height: 42rem;
-  // margin: 10px;
-  // margin-bottom: 60px;
   margin: 20px 20px;
 }
 

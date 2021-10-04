@@ -77,7 +77,6 @@ border: 5px inset #343c44;
 .textoBienvenida{
     font-size: 100px ;
     font-family: $fuentecursiva;
-    /*padding-right: 250px;*/
     font-weight: $negrita;
     padding-top: 150px;
 
@@ -209,5 +208,9 @@ ul li{
     font-weight: $negrita;
     font-family: Georgia;
 
+}
+
+.negrita{
+    font-weight: $negrita;
 }
 

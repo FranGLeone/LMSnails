@@ -39,7 +39,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <a class="navbar-brand" href="../index.html">
-                            <img src="../Assets/Images/LMS.png" alt="Logo" width="150px" height="120px">
+                            <img src="../Assets/Images/LMS.png" alt="Logo" width="150" height="120">
                         </a>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
@@ -62,6 +62,12 @@
                                     <a class="nav-link" href="tienda.html">Tienda</a>
                                 </li>
                             </ul>
+                            <span class="nav-icon logoCarrito"><i class="fas fa-shopping-cart fa-2x"
+                                    style="color: white;"></i></span>
+                            <br>
+                            <div id="numeroDeItems" style="color: white;">
+                                <p> 0 </p>
+                            </div>
                         </div>
                     </nav>
                 </div>
@@ -69,62 +75,190 @@
         </div>
     </header>
     <!--fin de navbar-->
-    
-    
+
+
     <div class="bordeTienda container">
         <div class="ofertaDiv">¡OFERTAS DE HASTA 50% OFF MUY PRONTO!</div>
-    <section class="container">
-        <div class="row">
-            <div class="col-lg-12 col-xs-6 #tituloTienda" data-aos="zoom-out" data-aos-duration="1200">
-                <h1 class="tituloPagina">Tienda</h1> <!--titulo de la pagina-->
+        <section class="container">
+            <div class="row">
+                <div class="col-lg-12 col-xs-6 #tituloTienda" data-aos="zoom-out" data-aos-duration="1200">
+                    <h1 class="tituloPagina">Tienda</h1>
+                    <!--titulo de la pagina-->
+                </div>
             </div>
-        </div>
-        
-    </section>
-    
-    
-    <br>
-    <br>
+        </section>
 
-    <div class="modal" id="myModal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-      
-            <!-- Modal Header -->
-            <div class="modal-header">
-              <h4 class="modal-title">Modal Heading</h4>
-              <button type="button" class="close" data-dismiss="modal">&times;</button>
-            </div>
-      
-            <!-- Modal body -->
-            <div class="modal-body">
-              
-            </div>
-      
-            <!-- Modal footer -->
-            <div class="modal-footer">
-              <button type="button" class="btn btn-danger botonFin" data-dismiss="modal">Finalizar compra</button>
-              <button type="button" class="btn btn-danger" data-dismiss="modal">Seguir comprando</button>
-            </div>
-      
-          </div>
-        </div>
-      </div>
-
-    
-
-    <section >
+        <!--aca van los items de la tienda-->
         <div class="container">
-            <div class="row " id="sectionTienda">
-                
+            <div class="row " id="sectionTienda"></div>
+        </div>
 
-    </section>
-</div>
- 
+    </div>
 
-    <br>
-    <br>
-    <br>
+    <!--modal carrito-->
+    <div class="modal fade modalCarrito" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LMS Nails</h5>
+                    <button type="button" class="btn btn-danger" data-dismiss="modal"
+                        aria-label="Close">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h1>Carrito</h1>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">#</th>
+                                    <th scope="col">Item</th>
+                                    <th scope="col">Cantidad</th>
+                                    <th scope="col">Acción</th>
+                                    <th scope="col">Total</th>
+                                </tr>
+                            </thead>
+                            <tbody id="items"></tbody>
+                            <tfoot>
+                                <tr id="total">
+                                    <th scope="row" colspan="5">¡El carrito se encuentra vacio!</th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" style="color: black;" data-dismiss="modal">
+                        Seguir comprando</button>
+                    <button type="button" class="btn btn-outline-dark botonFinalizarcompra"
+                        style="color: black;">Finalizar compra</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!--modal de confirmacion de compra-->
+
+    <div class="modal fade modalConfirmacion2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LMS Nails</h5>
+                </div>
+                <div class="modal-body">
+                    <p class="negrita">¡Compra realizada con éxito!</p>
+                    <p>Le enviaremos un mail con los detalles de la entrega a la brevedad.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="../index.html" style="color: black;"> <button type="button" class="btn btn-outline-dark"> Volver al inicio </button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--modal error de confirmacion de compra-->
+
+    <div class="modal fade modalError" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LMS Nails</h5>
+                </div>
+                <div class="modal-body">
+                    <p class="negrita">¡Error!</p>
+                    <p>Debes seleccionar uno o mas items para poder finalizar la compra.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-dark" style="color: black;" data-dismiss="modal">
+                        Seguir comprando</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+     <!--modal pedido de informacion de compra-->
+     <div class="modal fade modalConfirmacion" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">LMS Nails</h5>
+                </div>
+                <div class="modal-body">
+                    <form action="#" id="formCarrito">
+                        <!--nombre-->
+                        <div class="form-group label-floating">
+                            <label class="control-label" for="name">Nombre y apellido</label>
+                            <input type="text" class="form-control" id="name" name="name" required
+                                minlength="3" maxlength="28" placeholder="Juan Gonzalez">
+
+                        </div>
+                        <!--email-->
+                        <div class="form-group label-floating">
+                            <label class="control-label" for="email">Email</label>
+                            <input class="form-control" id="email" type="email" name="email" required
+                                minlength="12" placeholder="usuario@example.com">
+
+                        </div>
+                        <!--direccion-->
+                        <div class="form-group label-floating">
+                            <label class="control-label">Dirección</label>
+                            <input class="form-control" id="msg_subject" type="text" name="subject" required
+                                minlength="3" maxlength="28" placeholder="Av Buenos Aires 1234">
+                        </div>
+                    <div class="modal-footer">
+                    <div class=" mt-5">
+                        <input type="submit" value="Enviar" class="boton__formulario">
+                        <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!--templates-->
+    <template id="template-total">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>15</td>
+        <td>
+            <button class="btn btn-danger btn-sm" id="vaciar-carrito">Vaciar carrito</button>
+        </td>
+        <td class="negrita">$ <span>8000</span></td>
+
+    </template>
+
+    <template id="template-carrito">
+        <tr>
+            <th scope="row">id</th>
+            <td>esmalte</td>
+            <td>1</td>
+            <td>
+                <button class="btn btn-info suma btn-sm"> + </button>
+                <button class="btn btn-danger resta btn-sm">-</button>
+            </td>
+            <td>$ <span>800</span></td>
+        </tr>
+    </template>
+
+    <template id="template-card">
+        <div class="col-lg-3 mb-2 col-md-4 ">
+            <div class="card card__efecto card__tienda">
+                <img src="" alt="" class="card-img-top">
+                <div class="card-body">
+                    <p class="nombreEsmalte">Nombre</p>
+                    <h5 class="precioEsmalte">$<span>Precio</span> </h5>
+                    <button class="botonComprar">COMPRAR</button>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
 
 
     <!--comienzo de footer-->
@@ -148,10 +282,8 @@
     <!--fin de footer-->
 
     <!--bootstrap y jQuery-->
-    <script
-  src="https://code.jquery.com/jquery-3.6.0.js"
-  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-  crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
@@ -160,7 +292,7 @@
     <script>
         AOS.init();
     </script>
-<script src="../js/tienda.js"></script>
+    <script src="../js/tienda.js"></script>
 </body>
 
 </html>

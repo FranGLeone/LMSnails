@@ -38,7 +38,7 @@
                             <span class="navbar-toggler-icon"></span>
                         </button>
                         <a class="navbar-brand" href="../index.html">
-                            <img src="../Assets/Images/LMS.png" alt="Logo" width="150px" height="120px">
+                            <img src="../Assets/Images/LMS.png" alt="Logo" width="150" height="120">
                         </a>
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav mr-auto">
@@ -83,12 +83,12 @@
     <section class="container-fluid">
         <div class="row">
             <div class="col-lg-12 col-xs-12">
-                <section class="Material-contact-section section-padding section-dark">
+                <div class="Material-contact-section section-padding section-dark">
                     <div class="container">
                         <div class="row">
                             <div class="col-lg-12" data-aos="flip-down" data-aos-easing="ease-out-cubic"
                                 data-aos-duration="2000">
-                                <h1 class="section-title">Contáctate con nosotros</h1>
+                                <h2 class="section-title">Contáctate con nosotros</h2>
                                 <!--titulo-->
                             </div>
                         </div>
@@ -119,49 +119,69 @@
                                     <!--nombre-->
                                     <div class="form-group label-floating">
                                         <label class="control-label" for="name">Nombre y apellido</label>
-                                        <input type="text" class="form-control" id="name" name="name" required>
+                                        <input type="text" class="form-control" id="name" name="name" required
+                                            minlength="3" maxlength="28">
 
                                     </div>
                                     <!--email-->
                                     <div class="form-group label-floating">
-                                        <label class="control-label" for="email">Email</label>
-                                        <input class="form-control" id="email " type="email" name="email" required>
+                                        <label class="control-label">Email</label>
+                                        <input class="form-control" id="email" type="email" name="email" required
+                                            minlength="12">
 
                                     </div>
                                     <!--asunto-->
                                     <div class="form-group label-floating">
                                         <label class="control-label">Asunto</label>
-                                        <input class="form-control" id="msg_subject" type="text" name="subject"
-                                            required>
+                                        <input class="form-control" id="msg_subject" type="text" name="subject" required
+                                            minlength="3" maxlength="28">
 
                                     </div>
                                     <!--mensaje-->
                                     <div class="form-group label-floating">
                                         <label for="message" class="control-label">Mensaje</label>
-                                        <textarea class="form-control" rows="3" id="message" name="message"
-                                            required></textarea>
+                                        <textarea class="form-control" rows="3" id="message" name="message" required
+                                            minlength="5" maxlength="100"></textarea>
 
                                     </div>
-                                    <span class="error">
-                                        Por favor, escriba un nombre de 3 caracteres o más.
-                                    </span>
                                     <!--enviar-->
                                     <div class=" mt-5">
-                                        <input type="submit" value="Enviar" class="boton__formulario"> </input>
+                                        <input type="submit" value="Enviar" class="boton__formulario">
                                         <div id="msgSubmit" class="h3 text-center hidden"></div>
                                     </div>
                                 </form>
 
-                        
-                               
+
+
                             </div>
                         </div>
                     </div>
+
                     <!--fin de formulario-->
-                </section>
+                </div>
             </div>
         </div>
     </section>
+
+    
+    <!--modal -->
+    <div class="modal fade modalContacto" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">LMS Nails</h5>
+              <button type="button" class="btn btn-danger" data-dismiss="modal" aria-label="Close">&times;</button>
+            </div>
+            <div class="modal-body">
+              <p>¡Formulario enviado con éxito!</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-outline-dark"> <a href="../index.html" style="color: black;"> Volver al inicio </a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <!--fin de seccion contacto-->
 
     <!--comienzo de footer-->

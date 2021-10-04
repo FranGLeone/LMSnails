@@ -17,12 +17,7 @@ body {
   padding-right: 0px; }
 
 .indexSection {
-  /*display: flex;
-    justify-content:flex-end;*/
-  align-items: center;
-  /*height: 672px;*/
-  /*background-image: url(../Assets/Images/Fondo-index.jpg);
-    background-size: 2000px 700px;*/ }
+  align-items: center; }
 
 header {
   position: sticky;
@@ -41,7 +36,7 @@ header {
   align-items: center; }
 
 .card__efecto:hover {
-  transform: scale(1.15, 1.15); }
+  transform: scale(1.08, 1.08); }
 
 #sectionTienda {
   padding: 30px 0px 30px 10px; }
@@ -155,7 +150,6 @@ border: 5px inset #343c44;
 .textoBienvenida {
   font-size: 100px;
   font-family: "Clicker Script", cursive;
-  /*padding-right: 250px;*/
   font-weight: bold;
   padding-top: 150px; }
 
@@ -266,3 +260,6 @@ ul li {
   background-image: linear-gradient(to top, #e5bdc7, #dfa0b0, #e5bdc7);
   font-weight: bold;
   font-family: Georgia; }
+
+.negrita {
+  font-weight: bold; }
